@@ -1,7 +1,6 @@
 package pages;
 
 
-
 import org.junit.rules.TestRule;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,11 +19,11 @@ public class LoginPages extends LoginElementMap{
 	}
 
 	public static void informoCampoUsername(String Login) {
-		username.sendKeys(Login);
+		username.sendKeys("gabriela.penha");
 	}
 
 	public static void informoSenhanoPassword(String Senha) {
-		password.sendKeys(Senha);
+		password.sendKeys("426188");
 		
 	}
 

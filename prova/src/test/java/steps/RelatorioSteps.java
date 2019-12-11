@@ -1,12 +1,12 @@
 package steps;
 
-
 import cucumber.api.java.gl.E;
 import cucumber.api.java.it.Quando;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
+import pages.RelatorioPage;
 
-public class InserirDetalhesRelatorioSteps {
+public class RelatorioSteps {
 
 
 	@Dado("^que estou na pagina Report Issue$")
@@ -14,23 +14,27 @@ public class InserirDetalhesRelatorioSteps {
 		
 	}
 
-	@Quando("^eu informo a \"([^\"]*)\" Categoria$")
-	public void euInformoACategoria(String categoria)  {
+	@Quando("^eu informo a \"([^\"]*)\" no campo Categoria$")
+	public void euInformoANoCampoCategoria(String categoria) {
+		RelatorioPage.categoria();
 		
 	}
 
 	@E("^preencho o \"([^\"]*)\" no campo resumo$")
 	public void preenchoONoCampoResumo(String resumo){
+		RelatorioPage.resumo();
 		
 	}
 
 	@E("^preencho a \"([^\"]*)\" no campo Descricao$")
 	public void preenchoANoCampoDescricao(String descricao)  {
+		RelatorioPage.descricao();
 		
 	}
 
 	@E("^clico no botao \"([^\"]*)\"$")
-	public void clicoNoBotao(String arg1)  {
+	public void clicoNoBotao(String submit)  {
+		RelatorioPage.submit();
 		
 	}
 
@@ -38,6 +42,8 @@ public class InserirDetalhesRelatorioSteps {
 	public void oSistemaExibe(String arg1)  {
 		
 	}
+
+
 	
 	
 	
