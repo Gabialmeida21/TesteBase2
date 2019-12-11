@@ -22,7 +22,7 @@ public class LoginPages extends LoginElementMap{
 	}
 
 	public static void clicoBotaoLogin() {
-		cli_Login.click();
+		clik_Login.click();
 		
 	}
 
