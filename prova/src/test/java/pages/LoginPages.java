@@ -1,11 +1,18 @@
 package pages;
 
+
+
+import org.junit.rules.TestRule;
 import org.openqa.selenium.support.PageFactory;
 
 import ElementMap.LoginElementMap;
 
 
 public class LoginPages extends LoginElementMap{
+	
+//	public LoginPages() {
+//		PageFactory.initElements(TestRule.getDriver(), this);
+//	}
 
 	public static void validaPaginaLogin() {
 
@@ -22,7 +29,7 @@ public class LoginPages extends LoginElementMap{
 	}
 
 	public static void clicoBotaoLogin() {
-		clik_Login.click();
+		button.click();
 		
 	}
 
