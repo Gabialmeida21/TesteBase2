@@ -1,15 +1,18 @@
 package pages;
 
 import org.apache.bcel.generic.Select;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import ElementMap.RelatorioElementMap;
 
 public class RelatorioPage extends RelatorioElementMap {
 
 	public static void categoria() {
-		category_id.sendKeys("[All Projects] 7EI2PODHPN");
-//		Select category_id = new Select (category_id);
-//		category_id.selectByVisibleText("[All Projects] 7EI2PODHPN  ");
+
+		
+		Select = new Select (category_id);
+		Select.selectByVisibleText("[All Projects] 7EI2PODHPN");
 		
 	}
 
